@@ -1,0 +1,40 @@
+.List-score, .Syllable-score {
+    width: 80px;
+    height: 60px;
+    font-size:14px;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #1252ca;
+    color: #ffffffe3; /* Couleur de texte blanc */
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 10px;
+    transition: all 0.3s ease; 
+    padding: 10px; 
+    right:1%;
+}
+
+.List-score:hover, .Syllable-score:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
+}
+
+.List-score {
+    top: 12%;
+}
+
+.Syllable-score {
+    top: 20%;
+}
+
+
+@media(max-width:1454px) {
+    .List-score, .Syllable-score {
+        display: none;
+    }
+}
+

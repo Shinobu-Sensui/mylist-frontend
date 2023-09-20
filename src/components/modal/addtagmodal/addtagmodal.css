@@ -1,0 +1,142 @@
+.containerAddTagModal {
+  position: relative;
+  padding: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  min-height: 90vh;
+  background-color: rgba(6, 3, 21, 0.432);
+}
+
+
+.addTagModal {
+  position: absolute;
+  min-width: 50%;
+  min-height: 600px;
+  padding: 30px;
+  border-radius: 15px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #f0f0f0;
+  transition: all 0.3s ease;
+  border: solid 1px rgba(118, 117, 117, 0.218);
+  top: 35%;
+  left: 50%;
+  transform: translateY(-35%) translateX(-50%);
+  box-shadow: 2px 0px 2px .2px rgba(205, 203, 203, 0.081);
+}
+
+.parentAddTagModalInput {
+  display: flex;
+  justify-content: center;
+}
+
+.addTagModalTitle {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+  background: linear-gradient(-45deg, rgb(51, 38, 168), rgba(34, 191, 243, 0.679))
+}
+
+.addTagModalTitle svg {
+  margin-left: 5px;
+}
+
+.addTagModalWord {
+  text-align: center;
+  color: rgb(183, 183, 183);
+}
+
+#selectedAddTag {
+  background-color: rgb(50, 73, 222);
+}
+
+.addTagModal button {
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  /* Fond de bouton plus sombre */
+  border: solid 1px rgba(128, 128, 128, 0.218);
+  box-shadow: -1px 0px 5px .2px rgba(220, 217, 217, 0.181);
+  color: #fff;
+  /* Texte blanc */
+  margin: 10px;
+  transition: background 0.3s ease;
+  /* Transition de fond */
+}
+
+.addTagModalTagEdit {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  justify-content: center;
+}
+
+.addTagEdit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background: rgb(68, 86, 180)
+}
+
+.addTagModalCancel:hover {
+  background: #e74c3c;
+  /* Couleur de survol pour annuler */
+}
+
+.addTagModalSuccess:hover {
+  background: #2ecc71;
+  /* Couleur de survol pour confirmer */
+}
+
+.addTagModalWordRappel {
+  display: block;
+  color: rgb(168, 38, 110);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 8px;
+}
+
+
+@media(max-width:1050px) {
+
+  .addTagModalTagEdit {
+    grid-template-columns: repeat(3, 120px);
+  }
+
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .addTagEdit {
+    height: 70px;
+    width: 70px;
+  }
+
+  .addTagModal {
+    width: 90%;
+  }
+
+  .addTagModalTagEdit {
+    width: 100%;
+    grid-template-columns: repeat(3, 89px);
+  }
+    
+  .addTagModalCancel, .addTagModalSuccess {
+    width: 70px;
+  }
+
+  .addTagModal button {
+    padding:5px;
+  }
+  
+}

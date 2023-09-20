@@ -1,0 +1,36 @@
+* {
+  margin:0; 
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background:  rgb(21, 21, 27) !important;
+}
+
+#root{
+  font-family: 'Whitney', sans-serif;
+  color: #dcddde;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height:100vh;
+}
+
+.container {
+  width:100%;
+}
+
+.serverResponse {
+  background-color: rgb(61, 164, 196);
+  padding:10px;
+  color:rgba(216, 216, 216, 0.968);
+  font-weight: 700;
+}
+
+.form-container div {
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+

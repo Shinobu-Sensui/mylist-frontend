@@ -1,0 +1,6 @@
+.container-searchList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:90vh;
+}

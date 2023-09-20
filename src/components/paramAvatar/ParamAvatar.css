@@ -1,0 +1,41 @@
+.avatar-profil {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width:100%;
+}
+
+.params {
+  padding:25px;
+}
+
+.x {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-profil img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    margin-bottom:10px;
+    border-radius: solid 1px white;
+  }
+
+  .avatar-profil label {
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .avatar-profil label:hover {
+    color: rgb(88, 131, 232);
+  }
+
+  .image {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+  }

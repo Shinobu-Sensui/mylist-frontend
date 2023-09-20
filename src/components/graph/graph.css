@@ -1,0 +1,39 @@
+.graph {
+    border: solid 1px rgba(255, 255, 255, 0.153);
+    background:linear-gradient(180deg, #080c1a, #0a153c);
+    box-sizing: border-box;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-chart {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); 
+    justify-content: center;
+}
+
+
+@media(max-width:1024px) {
+    .container-chart {
+        grid-template-columns: 1fr;  
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+    .graph {
+        width:98%;
+        height:300px
+    }
+}
+
+@media(max-width:600px) {
+    .graph {
+        width:98%;
+        height:200px
+    }
+}

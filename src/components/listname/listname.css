@@ -1,0 +1,92 @@
+.parent-container-list {
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    width:100%;
+    max-height: 90vh;
+    gap: 12px; /* Ajout d'un espace uniforme entre les éléments */
+    padding: 20px; /* Espacement autour des bulles */
+  }
+  
+  .circle-container {
+    background: rgba(64, 64, 64, 0.612);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease; /* Réduction de la durée de la transition pour une réponse plus rapide */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 2px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre douce */
+  }
+  
+  .circle-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
+  }
+  
+  .list-name {
+    font-size: 13px;
+    color: #ffffffe3;
+    width: 100%;
+    text-align: center;
+    font-weight: 600; /* Ajout de poids pour une meilleure lisibilité */
+  }
+  
+  .selected {
+    background-color:   #1252ca;
+    transform: scale(1.1); /* Élément sélectionné un peu agrandi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée pour l'élément sélectionné */
+  }
+
+  .selected div {
+    text-transform: capitalize;
+  }
+  
+  @media(max-width:1024px) {
+
+    .parent-container-list {
+      gap:5px;
+      padding:0;
+    }
+
+   .circle-container {
+      max-width:60px;
+      max-height:60px;
+   }
+
+}
+
+@media(max-width:700px) {
+  .parent-container-list {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    flex-wrap: wrap; /* Ajout pour gérer plusieurs éléments */
+  }
+
+
+  .w, .interface-input {
+   min-width:450px;
+  }
+
+ .circle-container {
+    display: flex;
+    height: 30px; /* ou tout autre valeur */
+    border-radius: 0;
+    min-width: 80px;
+    max-width:100px;
+   
+    margin: 8px;
+ }
+
+ .list-name {
+    font-size:12px;
+    padding:10px;
+ }
+
+}

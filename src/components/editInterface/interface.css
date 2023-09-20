@@ -1,0 +1,169 @@
+
+
+.elegant-dark-table {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    max-height:600px;
+    overflow-y: auto;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+th, tr, td {
+    text-align: center;
+    width: 20%;
+}
+
+td, tr {
+    min-height: 60px;
+  
+}
+
+th {
+    background: #17387687; 
+}
+
+.addWordAndInput {
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+.add-button {
+    right:5%;
+    margin:10px;
+    border-radius: 5px !important;
+    padding: 5px !important;
+    background-color: #306cdb;
+}
+
+
+th, td {
+    padding:10px;
+    border: 1px solid rgba(252, 253, 255, 0.134);
+}
+
+.edit-button, .delete-button, .add-button {
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button, .delete-button {
+    background-color: rgb(5, 63, 125);
+    width: 60px;
+    margin: 5px;
+}
+
+
+.delete-button {
+    background-color: rgb(178, 17, 31);
+}
+
+.tagEdit {
+    padding: 2px 10px;
+    display: flex;
+    background-color: rgba(39, 93, 193, 0.971);
+    border-radius: 5px;
+    margin:5px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerTagEdit {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alignement des tags à gauche */
+    align-items: center;         /* Alignement vertical centré */
+}
+
+
+.addTag {
+    position: absolute;
+    left:8%;
+    top:50%;
+    transform: translateY(-50%);
+    height: 23px;
+    width: 23px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #334987;
+    color: white;
+}
+
+.wordEdit {
+    position: relative;
+}
+
+.editWord {
+    color:rgba(255, 255, 255, 0.906) !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+@media(max-width:1050px) {
+    table {
+        width:90%;
+    }
+}
+
+@media(max-width:744px) {
+    .addWordAndInput {
+        flex-direction: column;
+    }
+
+    .addTag {
+        left:50%;
+        top:10%;
+        transform: translateX(-50%);  
+        width:18px;
+        height:18px;
+    }
+
+    .containerTagEdit {
+       min-height: 100px;
+    }
+
+   .editWord {
+    font-size:14px;
+    min-width:100px;
+   }
+
+    .tagEdit {
+        margin:3px;
+        padding:1px;
+
+
+    }
+    .edit-button, .delete-button, .add-button {
+        border: none;
+        font-size:12px;
+        padding:2px;
+    }
+    
+    
+
+}
+
+@media(max-width:550px) {
+   .editWord {
+    text-transform: lowercase;
+   }
+}

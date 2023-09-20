@@ -1,0 +1,44 @@
+.container-params {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.params {
+    min-height: 600px;
+    min-width: 35%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px rgba(75, 85, 202, 0.264);
+}
+
+label {
+    text-align: center;
+}
+
+.maj {
+    margin-top: 40px;
+    color: rgba(153, 152, 150, 0.906);
+    font-weight: bold;
+}
+
+.img-maj {
+    margin-top: 30px;
+    border-radius: 10px;
+    height: 150px;
+    width: 200px;
+
+    object-fit: cover;
+
+}
+
+.refreshData {
+    padding: 8px;
+    background-color: rgb(28, 65, 110);
+    border: none;
+    color: rgb(255, 255, 255);
+}
